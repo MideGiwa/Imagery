@@ -17,9 +17,9 @@ function App() {
   const [filterContent, setFilterContent] = useState([]);
   const [image, setImage] = useState('');
 
-  const filterList = Array.from({ length: 8 }, (_, index) => (
-    <canvas key={index} className="canvas filter" height="100" width="100"></canvas>
-  ));
+  // const filterList = Array.from({ length: 8 }, (_, index) => (
+  //   <canvas key={index} className="canvas filter" height="100" width="100"></canvas>
+  // ));
 
   function generateFilter() {
     const { brightness, saturation, contrast, blur, grayscale, opacity, hueRotate, sepia, inversion } = settings;
